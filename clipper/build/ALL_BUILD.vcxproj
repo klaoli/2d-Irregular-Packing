@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{126F62CD-0874-3946-8F5D-DCBA4F75F3AF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\QT_pro\2dIrregularPacking\clipper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\QT_pro\2dIrregularPacking\clipper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\QT_pro\2dIrregularPacking\clipper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\QT_pro\2dIrregularPacking\clipper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\QT_pro\2dIrregularPacking\clipper\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/QT_pro/2dIrregularPacking/clipper/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+E:\Tools\CMake\bin\cmake.exe -SE:/QT_pro/2dIrregularPacking/clipper -BE:/QT_pro/2dIrregularPacking/clipper/build --check-stamp-file E:/QT_pro/2dIrregularPacking/clipper/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\QT_pro\2dIrregularPacking\clipper\build\CMakeFiles\3.26.0-rc6\CMakeCXXCompiler.cmake;E:\QT_pro\2dIrregularPacking\clipper\build\CMakeFiles\3.26.0-rc6\CMakeRCCompiler.cmake;E:\QT_pro\2dIrregularPacking\clipper\build\CMakeFiles\3.26.0-rc6\CMakeSystem.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CompilerId\VS-10.vcxproj.in;E:\Tools\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\QT_pro\2dIrregularPacking\clipper\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/QT_pro/2dIrregularPacking/clipper/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+E:\Tools\CMake\bin\cmake.exe -SE:/QT_pro/2dIrregularPacking/clipper -BE:/QT_pro/2dIrregularPacking/clipper/build --check-stamp-file E:/QT_pro/2dIrregularPacking/clipper/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\QT_pro\2dIrregularPacking\clipper\build\CMakeFiles\3.26.0-rc6\CMakeCXXCompiler.cmake;E:\QT_pro\2dIrregularPacking\clipper\build\CMakeFiles\3.26.0-rc6\CMakeRCCompiler.cmake;E:\QT_pro\2dIrregularPacking\clipper\build\CMakeFiles\3.26.0-rc6\CMakeSystem.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CompilerId\VS-10.vcxproj.in;E:\Tools\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\QT_pro\2dIrregularPacking\clipper\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/QT_pro/2dIrregularPacking/clipper/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+E:\Tools\CMake\bin\cmake.exe -SE:/QT_pro/2dIrregularPacking/clipper -BE:/QT_pro/2dIrregularPacking/clipper/build --check-stamp-file E:/QT_pro/2dIrregularPacking/clipper/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\QT_pro\2dIrregularPacking\clipper\build\CMakeFiles\3.26.0-rc6\CMakeCXXCompiler.cmake;E:\QT_pro\2dIrregularPacking\clipper\build\CMakeFiles\3.26.0-rc6\CMakeRCCompiler.cmake;E:\QT_pro\2dIrregularPacking\clipper\build\CMakeFiles\3.26.0-rc6\CMakeSystem.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CompilerId\VS-10.vcxproj.in;E:\Tools\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\QT_pro\2dIrregularPacking\clipper\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/QT_pro/2dIrregularPacking/clipper/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+E:\Tools\CMake\bin\cmake.exe -SE:/QT_pro/2dIrregularPacking/clipper -BE:/QT_pro/2dIrregularPacking/clipper/build --check-stamp-file E:/QT_pro/2dIrregularPacking/clipper/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\QT_pro\2dIrregularPacking\clipper\build\CMakeFiles\3.26.0-rc6\CMakeCXXCompiler.cmake;E:\QT_pro\2dIrregularPacking\clipper\build\CMakeFiles\3.26.0-rc6\CMakeRCCompiler.cmake;E:\QT_pro\2dIrregularPacking\clipper\build\CMakeFiles\3.26.0-rc6\CMakeSystem.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\CompilerId\VS-10.vcxproj.in;E:\Tools\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;E:\Tools\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\QT_pro\2dIrregularPacking\clipper\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\QT_pro\2dIrregularPacking\clipper\build\ZERO_CHECK.vcxproj">
+      <Project>{13962385-4EEA-31EA-9892-AA179BEE5F0C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\QT_pro\2dIrregularPacking\clipper\build\clipper_static.vcxproj">
+      <Project>{34608083-C80A-3BA5-BC61-04AB9CD18056}</Project>
+      <Name>clipper_static</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

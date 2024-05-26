@@ -1,0 +1,4 @@
+E:/QT_pro/2dIrregularPacking/clipper/build/CMakeFiles/clipper_static.dir
+E:/QT_pro/2dIrregularPacking/clipper/build/CMakeFiles/INSTALL.dir
+E:/QT_pro/2dIrregularPacking/clipper/build/CMakeFiles/ALL_BUILD.dir
+E:/QT_pro/2dIrregularPacking/clipper/build/CMakeFiles/ZERO_CHECK.dir
