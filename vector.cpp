@@ -27,3 +27,7 @@ Vector Vector::operator +(const Vector &vec) const {
 Vector Vector::operator -(const Vector &vec) const {
     return Vector(x - vec.x, y - vec.y);
 }
+
+double Vector::cross(const Vector &vec) const {
+    return x * vec.y - y * vec.x;
+}

@@ -59,6 +59,10 @@ void Piece::translate(double dx, double dy) {
     bg::transform(polygon, output, translate);
 
     polygon = output;
+
+
+    // 处理外接矩形
+    getEnvelope();
 }
 
 
@@ -70,6 +74,10 @@ void Piece::rotate(Angle angle) {
     bg::transform(polygon, output, rotate_strategy);
 
     polygon = output;
+    rotation = angle;
+
+    // 处理外接矩形
+    getEnvelope();
 }
 
 
@@ -87,6 +95,10 @@ void Piece::offset(double scale) {
     assert(output.size() == 1);
 
     polygon = converter->clipper2BoostPolygon(output);
+    area = bg::area(polygon);
+
+    // 处理外接矩形
+    getEnvelope();
 
 }
 
@@ -102,6 +114,10 @@ void Piece::clean() {
     CleanPolygons(paths, Parameters::curveTolerance * Parameters::scaleRate);
     assert(paths.size() == 1);
     polygon = converter->clipper2BoostPolygon(paths);
+    area = bg::area(polygon);
+
+    // 处理外接矩形
+    getEnvelope();
 }
 
 

@@ -11,11 +11,10 @@ public:
     static NFP* nfp;
     static NFP* getInstance();
 
+    polygon_t minkowskiDif(const polygon_t &pA, const polygon_t &pB) const;
     polygon_t generateNfp(libnfporb::polygon_t &polyA, libnfporb::polygon_t &polyB) const;
     polygon_t generateIfr(const box_t &bin, const polygon_t &poly) const;
 
-    polygon_t generateNfp(const Piece &pA, const Piece &pB) const;
-    polygon_t generateIfr(const box_t &bin, const Piece &piece) const;
 private:
     NFP();
     NFP(const NFP&) = delete;

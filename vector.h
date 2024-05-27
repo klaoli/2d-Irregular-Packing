@@ -14,7 +14,7 @@ public:
     double operator *(const Vector &vec) const;   // 内积
     Vector operator +(const Vector &vec) const;
     Vector operator -(const Vector &vec) const;
-    Vector cross(const Vector &vec) const;  // 叉乘
+    double cross(const Vector &vec) const;  // 叉乘
 
 public:
     double x;

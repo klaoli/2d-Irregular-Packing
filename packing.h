@@ -21,10 +21,12 @@ public:
 
     inline std::string getNfpKey(const Piece &A,const Piece &B);
     inline std::string getIfrKey(const Piece &A);
+
+    point_t findMostLeftPoint(std::vector<ring_t> &rings);
     void preprocess();
-    void getNfps();
-    void getIfrs();
-    void run();
+    int getNfps();
+    int getIfrs();
+    double run();
 
 private:
     Packing();

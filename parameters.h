@@ -13,6 +13,7 @@ struct Parameters{
 
     // 读取的多边形零件放大倍数
     static constexpr double polygonScaleRate = 100;
+    static constexpr double MAXDOUBLE = std::numeric_limits<double>::max();
 
     double minGap = 0;      // 零件间距，默认为0
 
