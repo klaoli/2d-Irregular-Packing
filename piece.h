@@ -29,6 +29,8 @@ public:
     Angle rotation;         // 旋转角度（0~360）
     double area;            // 零件面积
     box_t bounding;         // 零件外接矩形
+    bool defect;            // 是否有缺陷（孔洞）
+
 
     Vector transVector;
 };

@@ -10,11 +10,8 @@ std::string Parameters::piecePath;
 std::string Parameters::nfpPath;
 std::string Parameters::resultPath;
 double Parameters::maxRunTime;
+size_t Parameters::orientations;
 
-// 单例模式
-// 数据库
-// 算法部署云端
-// 上传GitHub
 
 int main() {
     MyNest::Parameters::piecePath = "dataset/jakobs1.txt";

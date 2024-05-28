@@ -3,7 +3,6 @@
 
 #include "piece.h"
 #include <vector>
-#include <unordered_map>
 
 namespace MyNest{
 
@@ -17,7 +16,6 @@ public:
     static box_t bin;
     static std::vector<Piece> pieces;
     static std::vector<std::vector<Piece>> piecesCache;
-    static std::unordered_map<std::string, polygon_t> nfpsCache;
 
     inline std::string getNfpKey(const Piece &A,const Piece &B);
     inline std::string getIfrKey(const Piece &A);

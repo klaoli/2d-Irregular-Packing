@@ -2,7 +2,8 @@
 #include "parameters.h"
 using namespace MyNest;
 
-Piece::Piece() : id(-1), typeId(-1), rotation(0) {
+Piece::Piece() :
+    id(-1), typeId(-1), rotation(0), defect(false) {
 
 }
 

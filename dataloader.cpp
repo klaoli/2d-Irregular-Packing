@@ -9,6 +9,11 @@ using namespace MyNest;
 
 DataLoader* DataLoader::dataLoader = nullptr;
 
+box_t DataLoader::bin;
+std::vector<Piece> DataLoader::pieces;
+std::unordered_map<std::string, polygon_t> DataLoader::nfpsCache;
+std::unordered_map<std::string, polygon_t> DataLoader::ifrsCache;
+
 DataLoader::DataLoader() {
 
 }

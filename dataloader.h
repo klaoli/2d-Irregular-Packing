@@ -1,10 +1,11 @@
-#ifndef READPOLYGONFILE_H
-#define READPOLYGONFILE_H
+#ifndef DATALOADER_H
+#define DATALOADER_H
 
 #include "piece.h"
 #include "geometry.h"
 
 #include <vector>
+#include <unordered_map>
 
 namespace MyNest {
 
@@ -20,9 +21,10 @@ public:
     void dataLoadFromTxt2();
     void dataLoadFromSql();
 
-    box_t bin;
-    std::vector<Piece> pieces;
-
+    static box_t bin;
+    static std::vector<Piece> pieces;
+    static std::unordered_map<std::string, polygon_t> nfpsCache;
+    static std::unordered_map<std::string, polygon_t> ifrsCache;
 private:
     DataLoader();
     DataLoader(const DataLoader&) = delete;
@@ -33,4 +35,4 @@ private:
 }
 
 
-#endif // READPOLYGONFILE_H
+#endif // DATALOADER_H
