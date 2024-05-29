@@ -31,6 +31,10 @@ void DataLoader::dataLoadFromTxt() {
     std::vector<double> v1, v2;   // 存储第一行数据、第二行数据
     std::vector< std::vector<double> > v3;  // 第三行到最后一行
     std::ifstream fin(Parameters::piecePath);
+    if (!fin) {
+        std::cerr << "Error: Failed to open file." << std::endl;
+        return;
+    }
 
     std::getline(fin, line);    // 获取第一行数据
     std::stringstream ss;
@@ -110,6 +114,10 @@ void DataLoader::dataLoadFromTxt2() {
     std::vector< std::vector<double> > v3;  //第三行到最后一行
 
     std::ifstream fin(Parameters::piecePath);
+    if (!fin) {
+        std::cerr << "Error: Failed to open file." << std::endl;
+        return;
+    }
 
     std::getline(fin, line);
     std::stringstream ss;
@@ -183,5 +191,85 @@ void DataLoader::dataLoadFromTxt2() {
                 break;
             }
         }
+    }
+}
+
+
+void DataLoader::dataLoadNfps() {
+    std::ifstream fin(Parameters::nfpPath, std::ios::in);
+    if (!fin) {
+        std::cerr << "Error: Failed to open file." << std::endl;
+        return;
+    }
+
+    std::string line;
+
+    std::getline(fin, line);   // 跳过文件第一行内容
+    while (std::getline(fin, line)) {
+        std::string str;
+        std::stringstream ss(line);
+        std::vector<std::string> lineArray;
+
+        while (std::getline(ss, str, ',')) {
+            lineArray.push_back(str);
+        }
+
+        double t;
+        std::istringstream iss;
+        std::vector<double> values;
+        polygon_t nfp;
+
+        iss.str(lineArray[1]);
+        while (iss >> t) {
+            values.push_back(t);
+        }
+
+        for (int j = 0; j < values.size(); j += 2) {
+            nfp.outer().push_back(point_t(values[j], values[j + 1]));    //外环
+        }
+
+        // to do : 处理内环
+
+        nfpsCache.insert(std::pair<std::string, polygon_t>(lineArray[0], nfp));
+    }
+}
+
+
+void DataLoader::dataLoadIfrs() {
+    std::ifstream fin(Parameters::ifrPath, std::ios::in);
+    if (!fin) {
+        std::cerr << "Error: Failed to open file." << std::endl;
+        return;
+    }
+
+    std::string line;
+
+    std::getline(fin, line);   // 跳过文件第一行内容
+    while (std::getline(fin, line)) {
+        std::string str;
+        std::stringstream ss(line);
+        std::vector<std::string> lineArray;
+
+        while (std::getline(ss, str, ',')) {
+            lineArray.push_back(str);
+        }
+
+        double t;
+        std::istringstream iss;
+        std::vector<double> values;
+        polygon_t ifr;
+
+        iss.str(lineArray[1]);
+        while (iss >> t) {
+            values.push_back(t);
+        }
+
+        for (int j = 0; j < values.size(); j += 2) {
+            ifr.outer().push_back(point_t(values[j], values[j + 1]));    //外环
+        }
+
+        // to do : 处理内环
+
+        nfpsCache.insert(std::pair<std::string, polygon_t>(lineArray[0], ifr));
     }
 }

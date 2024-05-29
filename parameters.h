@@ -19,10 +19,10 @@ struct Parameters{
 
     static std::string piecePath;  // 零件数据的路径
     static std::string nfpPath;    // nfp路径
+    static std::string ifrPath;    // ifr路径
     static std::string resultPath; // 布局结果存放路径
     static double maxRunTime;      // 算法最大运行时间
-
-    size_t orientations;
+    static size_t orientations;
 };
 
 

@@ -15,8 +15,8 @@ public:
     static DataLoader* dataLoader;
     static DataLoader* getInstance();
 
-    void dataLoadNFPs();
-    void dataLoadIFPs();
+    void dataLoadNfps();
+    void dataLoadIfrs();
     void dataLoadFromTxt();
     void dataLoadFromTxt2();
     void dataLoadFromSql();
